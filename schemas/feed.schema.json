@@ -10,7 +10,7 @@
           "type": "string"
         },
         "eventable_model": {
-          "enum": ["dataset", "request", "collection", "discussion"]
+          "enum": ["dataset", "request", "collection", "datasource", "discussion"]
         },
         "eventable_id": {
           "type": "string"
