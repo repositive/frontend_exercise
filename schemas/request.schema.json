@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Request",
+    "description": "Defines the format of the GET /request/<id> endpoint",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "title": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "user_id": {
+            "type": "string"
+        },
+        "created_at": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "id",
+        "title",
+        "description",
+        "user_id",
+        "created_at"
+    ]
+}

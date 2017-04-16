@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Error",
+    "description": "Defines the format of all the generic errors",
+    "type": "object",
+    "properties": {
+        "msg": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "msg"
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "User",
+    "description": "Defines the format of the GET /user/<id> endpoint",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "firstname": {
+            "type": "string"
+        },
+        "lastname": {
+            "type": "string"
+        },
+        "avatar": {
+            "type": "string"
+        },
+        "company": {
+            "type": "string"
+        },
+        "work_role": {
+            "type": "string"
+        },
+        "created_at": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "id",
+        "firstname",
+        "lastname",
+        "avatar",
+        "created_at"
+    ]
+}
