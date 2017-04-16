@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Collection",
-    "description": "Defines the format of the GET /collection/<id> endpoint",
+    "title": "Datasource",
+    "description": "Defines the format of the GET /datasource/<id> endpoint",
     "type": "object",
     "properties": {
         "id": {
@@ -16,6 +16,9 @@
         "short_description": {
             "type": "string"
         },
+        "icon": {
+            "type": "string"
+        },
         "created_at": {
             "type": "string"
         }
@@ -24,6 +27,7 @@
         "id",
         "name",
         "description",
+        "icon",
         "created_at"
     ]
 }
