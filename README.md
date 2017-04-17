@@ -4,7 +4,7 @@ During this exercise you are presented with a real design that was proposed but 
 ## Design Mockup
 ![Design](design.jpg)
 
-This design shows different data objects aggregated by day in descencent order by timestamp. The different types of data are:
+This design shows different data models aggregated by day in descencent order by timestamp. The different types of data are:
 
 - **[Users](schemas/user.schema.json):** Represents a user in the platform.
 - **[Datasets](schemas/dataset.schema.json):** Represents metadata about a bunch of raw genomic data.
@@ -39,7 +39,7 @@ And one endpoint to to get the feed of events to display:
 
 
 The goal of the exercise is for you to implement a solution using the information provided and matching the following criteria:
-  - Write an UI that shows an activity feed clustered by day mirroring the provided design mockup.
+  - Write an UI that shows an activity feed clustered by day mirroring the provided design mockup. Some of the icons are not provided, you can use a solution like [font awesome](http://fontawesome.io/) instead.
   - Mock the hypothetical API requests and take into account that the requests may fail. Each of the requests hits a different service with an independent time response and uptime rate. You don't need to implement any backend code! Just mock the calls to it.
   - Thats it!
 
