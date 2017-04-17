@@ -1,0 +1,8 @@
+{
+  "id": "c0d08799-cb47-48bb-b862-00a0c2d0f718",
+  "name": "Gene Expression Omnibus (GEO)",
+  "description": "GEO is a public functional genomics data repository supporting MIAME-compliant data submissions. Array- and sequence-based data are accepted. Tools are provided to help users query and download experiments and curated gene expression profiles.",
+  "short_description": "Gene Expression Omnibus (GEO) is a public functional genomics data repository for array- and sequence-based gene expression profiles.",
+  "icon": "https://s3.amazonaws.com/datasource-logos/GEO.gif",
+  "created_at": "2017-04-17T00:50:17.595Z"
+}
