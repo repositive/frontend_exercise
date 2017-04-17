@@ -25,7 +25,7 @@ To access this data you would have, once in production, an hypotetical API with 
   - Content type: `application/json`
   - Body: [error schema](schemas/error.schema.json)
 
-And one endpoint to to get the feed of the last week:
+And one endpoint to to get the feed of events to display:
 
 **GET** `<domain>/feed`:
  - On success: 
