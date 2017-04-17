@@ -41,12 +41,13 @@ And one endpoint to to get the feed of events to display:
 The goal of the exercise is for you to implement a solution using the information provided:
   - Write an UI that shows an activity feed clustered by day mirroring the provided design mockup. Some of the icons are not provided, you can use a solution like [font awesome](http://fontawesome.io/) instead.
   - Mock the hypothetical API requests and take into account that the requests may fail. Each of the requests hits a different service with an independent time response and uptime rate. You don't need to implement any backend code! Just mock the calls to it.
+  - For this exercise we are not concern with browser compatibility, you can go wild in terms of new apis or experimental features.
 
 Because of the time restrictions you may not be able to do everything. This is intended ;), so focus on what you consider more relevant.
 
 To help you out, we provide some resources. You don't not need them to complete the exercise, but you may find them usesful:
-  - Some examples of the API output and their schemas.
-  - Some basic CSS that you can extend.
+  - Some examples of the API [responses](examples) and their [schemas](schemas).
+  - Some [basic CSS](base.css) that you can extend.
 
 We have designed the exercise on purpose to be loose, allowing some creativity and the usage of previous experience. You are free to use the resources we provided or dismiss them, you can also use any technology or paradigm. The time allowed is tight, so you are also encouraged to reuse any code you have previously used somewhere else.
 
