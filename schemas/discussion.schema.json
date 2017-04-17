@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Conversation",
-    "description": "Defines the format of the GET /conversation/<id> endpoint",
+    "title": "Discussion",
+    "description": "Defines the format of the GET /discussion/<id> endpoint",
     "type": "object",
     "properties": {
         "id": {
@@ -13,6 +13,12 @@
         "text": {
             "type": "string"
         },
+        "model": {
+            "enum": ["dataset", "request"]
+        },
+        "model_id": {
+            "type": "string"
+        },
         "created_at": {
             "type": "string"
         }
@@ -21,6 +27,8 @@
         "id",
         "user_id",
         "text",
+        "model",
+        "model_id",
         "created_at"
     ]
 }
