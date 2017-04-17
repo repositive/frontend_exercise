@@ -38,17 +38,17 @@ And one endpoint to to get the feed of events to display:
   - Body: [error schema](schemas/error.schema.json)
 
 
-The goal of the exercise is for you to implement a solution using the information provided and matching the following criteria:
+The goal of the exercise is for you to implement a solution using the information provided:
   - Write an UI that shows an activity feed clustered by day mirroring the provided design mockup. Some of the icons are not provided, you can use a solution like [font awesome](http://fontawesome.io/) instead.
   - Mock the hypothetical API requests and take into account that the requests may fail. Each of the requests hits a different service with an independent time response and uptime rate. You don't need to implement any backend code! Just mock the calls to it.
-  - Thats it!
 
-To help you out, we provide some resources. You don't need them, but we are sure you'll find them useful:
+Because of the time restrictions you may not be able to do everything. This is intended ;), so focus on what you consider more relevant.
+
+To help you out, we provide some resources. You don't not need them to complete the exercise, but you may find them usesful:
   - Some examples of the API output and their schemas.
   - Some basic CSS that you can extend.
 
-We have designed the exercise to give you free of movement. You are free to use the resources we provided or dismiss them, you can also use any technology or paradigm. The time allowed is tight, so you are also encouraged to reuse any code structure you used already without restrictions.
-Because of the time restrictions you may not be able to do everything you want. This is intended ;), but we recommend you keep all the "production ready" stuff appart from your working version, that way, once you run out of time you can give us both, even if you only have a hello world page running fine, is better than nothing running. We'll evaluate also the non running code. If you wish, you can use git and keep a master and working branch.
+We have designed the exercise on purpose to be loose, allowing some creativity and the usage of previous experience. You are free to use the resources we provided or dismiss them, you can also use any technology or paradigm. The time allowed is tight, so you are also encouraged to reuse any code you have previously used somewhere else.
 
 We will take into consideration:
  - The project file structure.
@@ -59,8 +59,9 @@ We will take into consideration:
  - What to and not to test and how to test it.
  - Approach to documentation.
  - In general, how to reduce technical debt.
+ - A working solution. You can and should hand over some non working code, but try to deliver something working as well.
 
-The following days after you finish we'll arrange a call do discuss your solution. Aside the code, you may want to summarize the provided solution, detailing:
+After the exercise we will arrange a call do discuss your solution, it may be on a different date depending on avalability. Aside the code, you may want to summarize the provided solution, detailing:
 - What makes your approach scalable, maintainable, robust...
 - What are the drawbacks of this solution.
 - With more time what could be done to enhance the solution?
