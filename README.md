@@ -68,6 +68,6 @@ You should think about:
  - A working solution. You can and should hand over some non working code, but try to deliver something working as well
 
 ### Useful Resources
-To help you out, we have provided some resources. You don't not need them to complete the exercise, but you may find them useful:
+To help you out, we have provided some resources. You don't need them to complete the exercise, but you may find them useful:
   - Some examples of the API [responses](examples) and their [schemas](schemas)
   - Some [basic CSS](base.css) that you can extend
