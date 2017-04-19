@@ -25,7 +25,7 @@ In production, you can imagine a hypothetical API with the following endpoints, 
   - Content type: `application/json`
   - Body: [error schema](schemas/error.schema.json)
 
-Thee would also be an endpoint to get the feed of events to display:
+There would also be an endpoint to get the feed of events to display:
 
 **GET** `<domain>/feed`:
  - On success:
