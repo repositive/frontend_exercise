@@ -17,25 +17,25 @@ To get the data for this view, you can imagine making a request to an API endpoi
 
 **GET** `<domain>/feed`:
  - On success:
-  - Code: `200`
-  - Content type: `application/json`
-  - Body: [feed_array](schemas/feed.schema.json)
+   - Code: `200`
+   - Content type: `application/json`
+   - Body: [feed_array](schemas/feed.schema.json)
  - On error:
-  - Code: `401 | 500 | 502`
-  - Content type: `application/json`
-  - Body: [error schema](schemas/error.schema.json)
+   - Code: `401 | 500 | 502`
+   - Content type: `application/json`
+   - Body: [error schema](schemas/error.schema.json)
 
 and making a request to an API endpoint for each of the data models:
 
 **GET** `<domain>/<object_name>/<id>`:
  - On success: Returns a single entity for the given id
-  - Code: `200`
-  - Content type: `application/json`
-  - Body: Matching object schema
+   - Code: `200`
+   - Content type: `application/json`
+   - Body: Matching object schema
  - On error:
-  - Code: `401 | 404 | 500 | 502`
-  - Content type: `application/json`
-  - Body: [error schema](schemas/error.schema.json)
+   - Code: `401 | 404 | 500 | 502`
+   - Content type: `application/json`
+   - Body: [error schema](schemas/error.schema.json)
 
 ### Aim of Exercise
 The aim of this exercise is to build the view displayed in the above mockup:
