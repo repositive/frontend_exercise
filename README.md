@@ -58,7 +58,7 @@ You don’t have to use it but we’ve included some [basic CSS](base.css) to ge
 
 After the exercise, we’ll arrange a call to discuss your solution (as soon as possible after the exercise, depending on your availability). We’ll ask questions like:
 
-- what makes your solution scalable, maintainable & robust?
+- what makes your solution extensible, maintainable & robust?
 - what are the drawbacks of your solution?
 - with more time, what could you do to improve your solution?
 
