@@ -47,7 +47,7 @@ The aim of this exercise is to build the view displayed in the above mockup:
 - Feel free to use whichever technologies you wish (including frameworks, libraries, preprocessors - whatever you want).
 
 ##### Time Limit
-You have 5 hours to complete this exercise. We’ll measure the time from the first commit to the last commit.
+You have 3 hours to complete this exercise. We’ll measure the time from the first commit to the last commit.
 
 There’s a lot to do so don’t worry if you don’t finish everything. We’ll be interested to see what you prioritise and why.
 
