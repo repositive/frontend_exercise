@@ -1,7 +1,0 @@
-{
-  "id": "044cbcbb-8394-46f9-8257-d1505cbd096f",
-  "name": "Personal Genome Data",
-  "short_description": "A collection of genomic data from individuals who decided to publicly share their personal genomes.",
-  "description": "This collection includes data from individuals who have decided to share their genomic data with the public. There is a huge amount of value in the relatively untapped resource of 'personal genomes'.\nEspecially because this data is from ethnically and demographically diverse populations, and is often accompanied by a lot of interesting phenotypic data (such as age, allergies, eye colour) and lifestyle data (such as smoking, coffee consumption and general interests).\n\nThe data in this collection is all publicly available. Data sources include individuals who have shared their data on their 'own' website or are hosting it on platforms such as DNA Nexus. Other sources include the Personal Genome Project and Genomes Unzipped.",
-  "created_at": "2017-04-10T17:32:21.366Z"
-}
