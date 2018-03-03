@@ -1,72 +1,68 @@
-## Preamble
+# Frontend Exercise
 
-Below you’ll see a mockup of a feature we’d like to add to our app. It’s a newsfeed, listing a bunch of different activities that have happened on the platform.
+## Before you start coding
 
-![Design](design.jpg)
+- Fork this repository.
+- Work on your own and push commits regularly to your fork.
+- You can use any technology / language / framework of your choice. But remember, do not kill the fly with a sledgehammer.
+- Once you are done provide running instructions! This is super important, if the code doesn't run, it's not done.
+- You do not need to do anything else, we can access your fork and review the results there. You have full control over the code, so please, do not remove your fork it until we give you feedback!
 
-This view needs data from a few different data models:
+## The exercise
 
-- **Users:** Represents a user of the platform (see [schema](schemas/user.schema.json))
-- **Datasets:** Represents a dataset on the platform (see [schema](schemas/dataset.schema.json))
-- **Requests:** Represents a request (this is like asking a question on a forum) that a user has made on the platform (see [schema](schemas/request.schema.json))
-- **Discussion:** Represents a comment contributed to a discussion. Comments can be made on datasets & forum requests (see [schema](schemas/discussion.schema.json))
-- **Collection:** Represents a group of datasets (see [schema](schemas/collection.schema.json))
-- **Datasource:** Represents the organisation publishing genomic data (see [schema](schemas/datasource.schema.json))
+Below there is and image with the design of what you'll be building.
 
-To get the data for this view, you can imagine making a request to an API endpoint for the list of activities:
+![Design](design.png)
 
-**GET** `<domain>/feed`:
- - On success:
-   - Code: `200`
-   - Content type: `application/json`
-   - Body: [feed_array](schemas/feed.schema.json)
- - On error:
-   - Code: `401 | 500 | 502`
-   - Content type: `application/json`
-   - Body: [error schema](schemas/error.schema.json)
+The aim of this exercise is to create a histogram. The histogram represents a set of words and the number of occurrences of each word.
 
-and making a request to an API endpoint for each of the data models:
+You will receive anbject in the following format:
 
-**GET** `<domain>/<object_name>/<id>`:
- - On success: Returns a single entity for the given id
-   - Code: `200`
-   - Content type: `application/json`
-   - Body: Matching object schema
- - On error:
-   - Code: `401 | 404 | 500 | 502`
-   - Content type: `application/json`
-   - Body: [error schema](schemas/error.schema.json)
+```js
+{
+  "title": 'Pets in Cambridge',
+  "data": {
+    "cat": 55,
+    "dog": 14,
+    "lizard": 37, // There are a lot of Liz lovers in Cambridge. :D
+    "elephant": 3
+  }
+}
+```
 
-### Aim of Exercise
-The aim of this exercise is to build the view displayed in the above mockup:
+Notice that the elements of the data object are not sorted and that the amount of unique entities is unspecified and could range from 1 to ∞.
 
-- Build a UI that shows an activity feed grouped by day.
-- Mock the API requests (you don’t need to implement any backend code, just mock the calls to it) to the data models
-- Take into account that each of the requests will hit a different service with variable response times, uptime rates & may return an error.
-- Don’t worry too much about matching icons, text & images to the design - we won’t judge you on this. Just use dummy text & fake names and, if you’d like to include some icons, use the Material Design icon library (the [file](https://material.io/icons/#ic_insert_drive_file), [person](https://material.io/icons/#ic_person), [book](https://material.io/icons/#ic_library_books) icons might be useful).
-- Feel free to use whichever technologies you wish (including frameworks, libraries, preprocessors - whatever you want).
+Create the histogram using the previous object meeting the criteria:
+- The histogram shows a given title
+- Each row consists of 3 elements:
+  - The word
+  - The number of occurances of the word
+  - A bar representing the relative size of an element in the set.
+- The elements are sorted in descending order, so that the largest bar is on top.
 
-##### Time Limit
-You have 3 hours to complete this exercise. We’ll measure the time from the first commit to the last commit.
+Build first a minimal solution without taking into consideration the colour or the bars or other consmetic details.
 
-There’s a lot to do so don’t worry if you don’t finish everything. We’ll be interested to see what you prioritise and why.
+## Extensions
+#### You don't need to pick the task in order, pick them as better suits your style and interests.
 
-##### Resources
-You don’t have to use it but we’ve included some [basic CSS](base.css) to get you going, with font styles, color variables & spacing classes. We’ve also included example API [responses](examples) and their [schemas](schemas).
+- Add unit tests.
+- Create multiple histograms each histogram has a different base colour.
+- The colour of the bars should fade from dark to light, descending for the first five elements, the following elements use the color of the element in the fifth position.
+- If more than 5 bars need to be rendered on a single histogram, collapse them and provide an UI control to expand the view.
+- Request the data from an API endpoit:
+  - Design the API interface and write down the specification.
+  - Mock the frontend requests to the API using such specification.
 
-## How it will be reviewed
+## What we take into consideration:
+#### Note that the order of the apearance of the items doesn't correlate with the importance with assign to them.
 
-After the exercise, we’ll arrange a call to discuss your solution (as soon as possible after the exercise, depending on your availability). We’ll ask questions like:
-
-- what makes your solution extensible, maintainable & robust?
-- what are the drawbacks of your solution?
-- with more time, what could you do to improve your solution?
-
-When you’re working on your solution, you should also think about:
-
- - Handling of modularity and complexity
- - Readability and coherence of the code style
- - Managing state
- - CSS composition
- - What to and what not to test and how to test it
- - Documentation (if you think it’s appropriate)
+- Testing, preferably TDD and with focus on failure instead of success cases.
+- Data manipulation strategies.
+- Code style, composition vs inheritance and oo vs functional methodologies
+- Treatment of logic vs state.
+- Understanding of DOM manipulation.
+- Understanding of CSS composition.
+- Legibility and maintainability of the code.
+- Understanding of async and how to deal with callback hells.
+- During testing, mocking methodologies and API faking strategies.
+- Version control management.
