@@ -2,7 +2,7 @@
 
 ## Before you start coding
 
-- Create a public Git repository on Github or your Git hosting platform of choice, as long as it's publicly accessible.
+- Preferable, create a public Git repository on Github or your Git hosting platform of choice, as long as it's accessible by us. We can also accept a ZIP file of the repository if you do not want to create an online repository. Please inlcude the `.git` folder so the history is retained.
 - Use [`create-react-app`](https://github.com/facebook/create-react-app) to create a React application skeleton on your development machine:
 
   ```bash
