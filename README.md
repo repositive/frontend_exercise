@@ -50,6 +50,8 @@ Build first a minimal solution without taking into consideration the colour or t
 
 ## Extensions
 
+If you finish the main task and have some time left, there are some extra tasks below.
+
 #### You don't need to pick the task in order, pick them as better suits your style and interests.
 
 - Add unit tests.
