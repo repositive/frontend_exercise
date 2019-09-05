@@ -1,16 +1,21 @@
-# Frontend Exercise
+# React Frontend Exercise
 
 ## Before you start coding
 
-- Fork this repository.
+- Preferable, create a public Git repository on Github or your Git hosting platform of choice, as long as it's accessible by us. We can also accept a ZIP file of the repository if you do not want to create an online repository. Please inlcude the `.git` folder so the history is retained.
+- Use [`create-react-app`](https://github.com/facebook/create-react-app) to create a React application skeleton on your development machine:
+
+  ```bash
+  npx create-react-app frontend_exercise_implementation
+  ```
+
 - Work on your own and push commits regularly to your fork.
-- You can use any technology / language / framework of your choice. But remember, do not kill the fly with a sledgehammer.
 - Once you are done provide running instructions! This is super important, if the code doesn't run, it's not done.
-- You do not need to do anything else, we can access your fork and review the results there. You have full control over the code, so please, do not remove your fork it until we give you feedback!
+- You do not need to do anything else, we can access your repository and review the results there. You have full control over the code, so please, do not remove your repository until we give you feedback!
 
 ## The exercise
 
-Below there is and image with the design of what you'll be building.
+Below there is an image with the design of what you'll be building. We expect the exercise to take between one and two hours.
 
 ![Design](design.png)
 
@@ -33,6 +38,7 @@ You will receive anbject in the following format:
 Notice that the elements of the data object are not sorted and that the amount of unique entities is unspecified and could range from 1 to ∞.
 
 Create the histogram using the previous object meeting the criteria:
+
 - The histogram shows a given title
 - Each row consists of 3 elements:
   - The word
@@ -43,17 +49,20 @@ Create the histogram using the previous object meeting the criteria:
 Build first a minimal solution without taking into consideration the colour or the bars or other consmetic details.
 
 ## Extensions
+
+If you finish the main task and have some time left, there are some extra tasks below.
+
 #### You don't need to pick the task in order, pick them as better suits your style and interests.
 
 - Add unit tests.
 - Create multiple histograms each histogram has a different base colour.
 - The colour of the bars should fade from dark to light, descending for the first five elements, the following elements use the color of the element in the fifth position.
-- If more than 5 bars need to be rendered on a single histogram, collapse them and provide an UI control to expand the view.
 - Request the data from an API endpoit:
   - Design the API interface and write down the specification.
   - Mock the frontend requests to the API using such specification.
 
 ## What we take into consideration:
+
 #### Note that the order of the apearance of the items doesn't correlate with the importance with assign to them.
 
 - Testing, preferably TDD and with focus on failure instead of success cases.
