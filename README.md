@@ -1,12 +1,17 @@
-# Frontend Exercise
+# React Frontend Exercise
 
 ## Before you start coding
 
-- Fork this repository.
+- Create a public Git repository on Github or your Git hosting platform of choice, as long as it's publicly accessible.
+- Use [`create-react-app`](https://github.com/facebook/create-react-app) to create a React application skeleton on your development machine:
+
+  ```bash
+  npx create-react-app frontend_exercise_implementation
+  ```
+
 - Work on your own and push commits regularly to your fork.
-- You can use any technology / language / framework of your choice. But remember, do not kill the fly with a sledgehammer.
 - Once you are done provide running instructions! This is super important, if the code doesn't run, it's not done.
-- You do not need to do anything else, we can access your fork and review the results there. You have full control over the code, so please, do not remove your fork it until we give you feedback!
+- You do not need to do anything else, we can access your repository and review the results there. You have full control over the code, so please, do not remove your repository until we give you feedback!
 
 ## The exercise
 
@@ -33,6 +38,7 @@ You will receive anbject in the following format:
 Notice that the elements of the data object are not sorted and that the amount of unique entities is unspecified and could range from 1 to ∞.
 
 Create the histogram using the previous object meeting the criteria:
+
 - The histogram shows a given title
 - Each row consists of 3 elements:
   - The word
@@ -43,6 +49,7 @@ Create the histogram using the previous object meeting the criteria:
 Build first a minimal solution without taking into consideration the colour or the bars or other consmetic details.
 
 ## Extensions
+
 #### You don't need to pick the task in order, pick them as better suits your style and interests.
 
 - Add unit tests.
@@ -54,6 +61,7 @@ Build first a minimal solution without taking into consideration the colour or t
   - Mock the frontend requests to the API using such specification.
 
 ## What we take into consideration:
+
 #### Note that the order of the apearance of the items doesn't correlate with the importance with assign to them.
 
 - Testing, preferably TDD and with focus on failure instead of success cases.
