@@ -55,7 +55,6 @@ Build first a minimal solution without taking into consideration the colour or t
 - Add unit tests.
 - Create multiple histograms each histogram has a different base colour.
 - The colour of the bars should fade from dark to light, descending for the first five elements, the following elements use the color of the element in the fifth position.
-- If more than 5 bars need to be rendered on a single histogram, collapse them and provide an UI control to expand the view.
 - Request the data from an API endpoit:
   - Design the API interface and write down the specification.
   - Mock the frontend requests to the API using such specification.
