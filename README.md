@@ -15,7 +15,7 @@
 
 ## The exercise
 
-Below there is and image with the design of what you'll be building.
+Below there is an image with the design of what you'll be building. We expect the exercise to take between one and two hours.
 
 ![Design](design.png)
 
